@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToDo App</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #6a5af9, #b245f3);
+    }
+
+    .todo-container {
+      background: #fff;
+      width: 90%;
+      max-width: 600px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .title span {
+      color: #f7c948;
+    }
+
+    .input-box {
+      display: flex;
+      align-items: center;
+      background: #f4f6f8;
+      border-radius: 8px;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+    }
+
+    .input-box input {
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 100%;
+      font-size: 16px;
+      margin-left: 8px;
+    }
+
+    .task-box {
+      display: flex;
+      margin-top: 15px;
+    }
+
+    .task-box input {
+      flex: 1;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px 0 0 8px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .task-box button {
+      padding: 0 25px;
+      border: none;
+      background: #3b82f6;
+      color: white;
+      font-size: 16px;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+
+    .task-box button:hover {
+      background: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="todo-container">
+    <div class="title">
+      ToDo App <span>☀️</span>
+    </div>
+
+    <div class="input-box">
+      🔍
+      <input type="text" placeholder="Search tasks..." />
+    </div>
+
+    <div class="task-box">
+      <input type="text" placeholder="✍️ Add a new task..." />
+      <button>Add</button>
+    </div>
+
+    <footer>
+      Simple HTML & CSS Project
+    </footer>
+  </div>
+
+</body>
+</html>
